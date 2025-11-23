@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myplus.engl.mapper.EngExaSentMapper">
+
+    <!-- 通用查询映射结果 -->
+   <resultMap id="resultMapEngExaSent" type="com.myplus.engl.entity.EngExaSent">
+        <id column="id" property="id" />
+        <result column="word_id" property="wordId" />
+        <result column="example" property="example" />
+        <result column="insert_time" property="insertTime" />
+        <result column="last_update_time" property="lastUpdateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List_EngExaSent">
+          id,
+          word_id as wordId,
+          example,
+          insert_time as insertTime,
+          last_update_time as lastUpdateTime,
+    </sql>
+</mapper>
